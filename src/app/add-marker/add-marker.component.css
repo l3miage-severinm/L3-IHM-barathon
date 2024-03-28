@@ -1,0 +1,32 @@
+#add-marker-root {
+    margin: auto;
+    padding-top: 10px;
+    max-width: 500px;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex-col {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+input {
+    padding: 4px;
+}
+
+select {
+    padding: 4px;
+}
+
+option {
+    padding: 4px;
+}
+
+button {
+    padding: 4px;
+}

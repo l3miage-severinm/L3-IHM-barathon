@@ -1,0 +1,17 @@
+<div id="add-marker-root">
+    <div class="flex-col">
+        <input #query (keyup.enter)="fetchCoords(query.value)">
+        <button (click)="fetchCoords(query.value)">Chercher</button>
+    </div>
+    <div class="flex-col">
+        <select #select>
+            @for (o of options; track o.id) {
+                <option [value]="o.properties!['id']">{{o.properties!['label']}}</option>
+            }
+        </select>
+        <button (click)="addMarker.emit(findMarker(select.value))">Ajouter</button>
+    </div>
+</div>
+
+
+
